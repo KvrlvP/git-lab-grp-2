@@ -4,7 +4,6 @@ import java.util.List;
 
 public class StudentReport {
 
-    // Clase para reportes de estudiantes
 
     public void generateReport(List<StudentModel> students) {
         System.out.println("=== REPORTE ===");
@@ -15,14 +14,14 @@ public class StudentReport {
     }
 
     public void displayStudent(StudentModel student) {
-    if (student == null) {
-        System.out.println("Estudiante no encontrado.");
-        return;
-    }
+        if (student == null) {
+            System.out.println("Estudiante no encontrado.");
+            return;
+        }
 
-    System.out.println("--- Detalle ---");
-    System.out.println("ID: " + student.getId());
-    System.out.println("Nombre: " + student.getNombre());
-    System.out.println("Apellido: " + student.getApellido());
-}
+        System.out.println("--- Detalle ---");
+        System.out.println("ID: " + student.getId());
+        System.out.println("Nombre: " + student.getNombre());
+        System.out.println("Apellido: " + student.getApellido());
+    }
 }
