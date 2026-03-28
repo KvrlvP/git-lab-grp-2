@@ -15,9 +15,14 @@ public class StudentReport {
     }
 
     public void displayStudent(StudentModel student) {
-        System.out.println("--- Detalle ---");
-        System.out.println("ID: " + student.getId());
-        System.out.println("Nombre: " + student.getNombre());
-        System.out.println("Apellido: " + student.getApellido());
+    if (student == null) {
+        System.out.println("Estudiante no encontrado.");
+        return;
     }
+
+    System.out.println("--- Detalle ---");
+    System.out.println("ID: " + student.getId());
+    System.out.println("Nombre: " + student.getNombre());
+    System.out.println("Apellido: " + student.getApellido());
+}
 }
