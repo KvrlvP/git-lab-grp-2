@@ -6,9 +6,13 @@ public class
 StudentController
 {
   public List<Object> getStudents() {
-    List<Object> students = new ArrayList<>();
-    students.add("Ana Garcia");
-    students.add("Luis Perez");
-    return students;
+    try {
+      List<Object> students = new ArrayList<>();
+      students.add("Ana Garcia");
+      if (students == null) return Collections.emptyList();
+      return students;
+    } catch (Exception e) {
+      return Collections.emptyList();
+    }
   }
 }
