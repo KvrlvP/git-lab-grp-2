@@ -13,4 +13,11 @@ public class StudentReport {
         }
         System.out.println("Total: " + students.size());
     }
+
+    public void displayStudent(StudentModel student) {
+        System.out.println("--- Detalle ---");
+        System.out.println("ID: " + student.getId());
+        System.out.println("Nombre: " + student.getNombre());
+        System.out.println("Apellido: " + student.getApellido());
+    }
 }
